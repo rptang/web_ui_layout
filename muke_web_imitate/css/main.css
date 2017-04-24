@@ -1,0 +1,339 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+.top{
+    width: 100%;
+    height: 27px;
+    /*
+     * repeat-x 表示水平平铺，这个效果值得借鉴
+     */
+    background: url(../images/top_bg.jpg) repeat-x;
+}
+
+.top_content{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.top_content li{
+    float: right;
+    width: 70px;
+    /*
+     * 用来替换<li>元素前的图案
+     */
+    list-style-image: url(../images/arrow.jpg);
+    line-height: 27px;
+}
+
+/*
+ * 表示作为链接的基本样式
+ */
+.top_content a:link, .top_content a:visited {
+    color: #8E8E8E;
+    text-decoration: none;
+}
+
+/*
+ * 表示鼠标在链接上移动和激活的链接样式
+ */
+.top_content a:hover, .top_content a:active {
+    color: #C00;
+    text-decoration: none;
+}
+
+.wrap{
+    width: 1000px;
+    background: #FFF;
+    margin: 0 auto;
+}
+
+.logo{
+    height: 80px;
+}
+
+.logo_left{
+    float: left;
+    /*width: 375px;*/
+    /*display: inline;*/
+}
+
+.logo_right{
+    float: right;
+    line-height: 80px;
+    margin-right: 10px;
+    color: #6a6a6a;
+}
+
+.logo_right img{
+    /*
+     * 对logo_right中标签img进行设置
+     */
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.logo_right span{
+    font-size: 16px;
+    color: #900b09;
+}
+
+/*
+ * 这里要处理好<li>和<a>之间的关系
+ */
+.nav_mid_left li{
+    width: 100px;
+    float: left;
+    text-align: center;
+    list-style-type: none;
+}
+
+.nav_mid_left a{
+    line-height: 40px;
+    font-family: "微软雅黑";
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav_mid a:link, .nav_mid a:visited {
+    color: #FFF;
+
+}
+.nav_mid a:hover, .nav_mid a:active {
+    color: #FF0;
+}
+
+.nav_left{
+    width: 10px;
+    background: url(../images/nav_left.jpg) no-repeat;
+    clear: both;
+}
+
+.nav_right{
+    width: 10px;
+    background: url(../images/nav_right.jpg) no-repeat;
+    float: left;
+}
+
+.nav_mid{
+    width: 980px;
+    background: url(../images/nav_bg.jpg) repeat-x;
+    float: left;
+}
+
+.nav_left,.nav_mid,.nav_right{
+    /*
+     * 1、这里为什么要设置高度才会正常显示？我给了图片也给了宽度，不应该是自动撑大小的吗
+     * 2、如果我设置高度的话，我给父元素设置了高度，不就等同于给子元素定了高度吗，但是实验的结果表示不可以
+     */
+    height: 40px;
+    float: left;
+}
+
+.nav_mid_left{
+    width: 680px;
+    float: left;
+}
+
+.nav_mid_right{
+    width: 300px;
+    float: left;
+}
+
+.nav_mid_right .search_text{
+    height: 21px;
+    background: url("../images/search.jpg") no-repeat right center;
+    background-color: #FFF;
+    border: 1px solid #FFF;
+    margin-top: 8px;
+    padding-right: 26px;
+}
+
+/*
+ * 这里又出现了很有意思的东西，不知道他的原理是什么
+ * 当我们的无序列表加上后，会按照从上到下的标准文档流显示
+ * 现在我们希望列表从左到右一张一张显示，所以我们添加overflow: hidden;属性设置
+ * 但是显示的效果只显示1/4，如果你的列表有四列的话，感觉跟浮动有点关系
+ * clear: both;成功解决
+ */
+.ad{
+    height: 320px;
+    overflow: hidden;
+    clear: both;
+}
+
+.main{
+    height: 250px;
+    background: #FFF;
+    margin-top: 5px;
+}
+
+.news{
+    width: 340px;
+    /*border: 1px solid #E8E8E8;*/
+}
+
+.products{
+    width: 410px;
+    margin: 0 10px;
+    /*border: 1px solid #E8E8E8;*/
+}
+
+.sidebar{
+    width: 230px;
+}
+
+.news,.products,.sidebar{
+    float: left;
+    height: 250px;
+}
+
+.title{
+    height: 35px;
+    border: 2px solid #E8E8E8;
+    line-height: 35px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #786F66;
+}
+
+/*
+ * 原来.title.title_left是行不通的，并不是找到 class = "title_left"的那个对象
+ */
+.title_left{
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+}
+
+.title_right{
+    width: 20%;
+    float: right;
+}
+
+.title_right a {
+    color: #999;
+    text-decoration: none;
+    font-family: "宋体";
+    font-size: 14px;
+    font-weight: normal;
+    padding-right: 10px;
+}
+
+.pic_news,.product_list{
+    height: 80px;
+    margin-top: 10px;
+    line-height: 22px;
+}
+
+.pic_news img,.product_list img{
+    margin: 0 5px;
+    float: left;
+    line-height: 80px;
+}
+
+.pic_news a,.product_list a{
+    color: #c00;
+    text-decoration: none;
+}
+
+.news_list{
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.news_list li{
+    list-style-type: none;
+    background: url(../images/list.jpg) no-repeat;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #CCC;
+}
+
+.news_list span{
+    float: right;
+    color: #999999;
+    padding-right: 5px;
+}
+
+.news_list a:link,.news_list a:visited{
+    text-decoration: none;
+    color: #000;
+    padding-left: 10px;
+}
+
+.news_list a:hover,.news_list a:active{
+    text-decoration: none;
+    color: #F00;
+    padding-left: 10px;
+}
+
+.product_list{
+    height: 120px;
+    margin-top: 10px;
+    line-height: 22px;
+}
+
+.product_type li{
+    list-style-type: none;
+    float: left;
+    line-height: 37px;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.product_type{
+    margin: 20px auto;
+    width: 352px;
+    height: 37px;
+    background: url(../images/product_type_bg.jpg) no-repeat;
+}
+
+.service{
+    margin-top: 5px;
+}
+
+.copyright{
+    width: 100%;
+    height: 200px;
+    background-color: #E8E8E8;
+    margin-top: 10px;
+}
+
+.copyright_content{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.copyright_content li{
+    float: left;
+    width: 200px;
+    background: url(../images/line.png) no-repeat right center;
+    list-style-type: none;
+    line-height: 30px;
+    text-align: center;
+    font-family: "微软雅黑";
+    font-size: 18px;
+    color: #999999;
+}
+
+.copyright_content li ul li a{
+    font-size: 14px;
+    color: #999999;
+    text-decoration: none;
+}
+
+.copyright_content li img{
+    vertical-align: middle;
+}
+
+.pic_qrcode{
+    margin-top: 24px;
+}
+
+
