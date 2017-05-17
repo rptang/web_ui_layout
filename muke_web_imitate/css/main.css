@@ -336,4 +336,29 @@ body {
     margin-top: 24px;
 }
 
+.list_main{
+    min-height: 350px;
+    _height: 350px;
+    background-color: #FFF;
+    margin-top: 10px;
+}
+
+.news_type{
+    width: 220px;
+    min-height: 350px;
+    _height: 350px;
+    border: 1px solid #E8E8E8;
+    background-color: #9FC;
+    float: left;
+}
+
+.list_box{
+    width: 770px;
+    min-height: 350px;
+    _height: 350px;
+    border: 1px solid #E8E8E8;
+    background-color: #F9F;
+    float: right;
+}
+
 
