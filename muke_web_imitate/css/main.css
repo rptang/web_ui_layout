@@ -303,6 +303,7 @@ body {
     height: 200px;
     background-color: #E8E8E8;
     margin-top: 10px;
+    clear: both;
 }
 
 .copyright_content{
@@ -348,7 +349,6 @@ body {
     min-height: 350px;
     _height: 350px;
     border: 1px solid #E8E8E8;
-    background-color: #9FC;
     float: left;
 }
 
@@ -357,8 +357,52 @@ body {
     min-height: 350px;
     _height: 350px;
     border: 1px solid #E8E8E8;
-    background-color: #F9F;
     float: right;
 }
 
+.news_type h2{
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #666666;
+    background: url("../images/titile_bg.gif") repeat-x;
+    padding-left: 20px;
+}
 
+.news_type_content{
+    height: 310px;
+    background: url("../images/content_bg.gif") repeat-x;
+    background-color: #ffffff;
+}
+
+.news_type_content li{
+    list-style-type: none;
+    height: 30px;
+    line-height: 30px;
+}
+
+.news_type_content li a{
+    color: #666666;
+    text-decoration: none;
+    background: url("../images/li_bg.gif") no-repeat left center;
+    padding-left: 15px;
+    display: block;
+}
+
+.news_type_content li a:hover{
+    color: #009CDF;
+    background: url("../images/li_bg2.gif") no-repeat left center;
+    background-color: #F2F2F2;
+}
+
+.list_box h2{
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #666666;
+    height: 35px;
+    line-height: 35px;
+    background: url("../images/type_bg.png") repeat-x;
+    padding-left: 20px;
+    display: block;
+}
