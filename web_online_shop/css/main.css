@@ -20,3 +20,8 @@
 .shopCar{margin-top: 23px; width: 145px;height: 35px; background-color: #ff8800;font: 14px/35px "Microsoft YaHei";color: #FFFFFF;}
 .shopText{background:url("../images/shop_bar.png") 10px center no-repeat;line-height:35px;height: 100%; text-indent: 40px; width: 87px;border-right: #e27a00 solid 1px;}
 .shopNum{width: 27px; height: 35px;border-left: #ff9c01 solid 1px; background:url("../images/shop_num.png") 33px center no-repeat;text-align: right;padding-right: 29px; }
+
+/*navBar*/
+.navBar{height: 35px;background-color: #1369c0; font-family: 微软雅黑; color: #FFFFFF;}
+.shopClass{width: 189px; line-height: 35px;/*会留下后患*/}
+.shopClass i{width: 11px;height: 7px;background: url("../images/nav_down.png") left center no-repeat;overflow:hidden;display: inline-block; margin-left: 11px;}
