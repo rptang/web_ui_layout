@@ -24,7 +24,7 @@
 .shopNum{width: 27px; height: 35px;border-left: #ff9c01 solid 1px; background:url("../images/shop_num.png") 33px center no-repeat;text-align: right;padding-right: 29px; }
 
 /*navBar*/
-.navBar{height:35px;background-color: #1369c0; font-family: 微软雅黑; }
+.navBar{height:35px;background-color: #1369c0; font-family: 微软雅黑;}
 .shopClass{width: 189px; position: relative; color: #FFFFFF;}
 .shopClass h3{line-height: 35px; text-align: center}
 .shopClass i{width: 11px;height: 7px;background: url("../images/nav_down.png") left center no-repeat;/*overflow:hidden;*/display: inline-block; margin-left: 11px;}
@@ -44,7 +44,7 @@
 .shopClass_show_item dd{font-size: 12px;}
 
 /*shopClass_list*/
-.shopClass_list{width: 568px; border: #e5e5e5 solid 1px; position: absolute; left: 189px; top: 35px; }
+.shopClass_list{width: 568px; border: #e5e5e5 solid 1px; position: absolute; left: 189px; top: 35px;}
 .shopClass_list_item{padding: 10px 0; border-bottom: #e5e5e5 solid 1px; margin-left: 16px; margin-right: 20px;}
 .shopClass_list_item dt{color: #4b88da; font-weight: bold;height: 24px; line-height: 24px;}
 .shopClass_list .shopClass_list_item dd{padding-left: 66px; margin-top: -24px; line-height: 24px;}
@@ -60,7 +60,16 @@
 .shopClass_show_item_active dt{background: none;}
 
 /*banner*/
-.banner_bar{width: 810px; height: 326px;float: right; position: relative;}
-.imgBox{width: 810px;height: 326px; position: absolute; left: 0;top:0;}
+.banner{margin-bottom: 40px;}
+.banner_bar{width: 810px; height: 326px;float: right; position: relative; overflow: hidden;}
+.imgBox{width: 1620px;height: 326px; position: absolute; left: 0;top:0;}
 .imgBox li{width: 810px;height: 326px; float: left;}
 .imgBox img{width: 810px;height: 326px; display: block;}
+.imgNum{position: absolute; left: 0px;bottom: 0px;width: 100%;text-align: center;}
+.imgNum a{width: 20px; height: 5px; background-color: #FFF;display: inline-block;overflow: hidden; margin-right: 5px; margin-bottom: 15px;}
+.imgNum .imgNum_active{background-color: #ff7700;}
+
+/*shopTit*/
+.shopTit{height: 45px;font-size: 24px;}
+.shopTit .icon{width:44px; height: 45px;  background: url("../images/icon.png") left top no-repeat; display: inline-block;float: left;}
+.shopTit h3{float: left; height: 45px; line-height: 45px; margin-left: 14px; font-weight: normal;}
