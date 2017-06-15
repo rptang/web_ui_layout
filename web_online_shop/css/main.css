@@ -33,7 +33,7 @@
 .nav .active{background-color: #4593fd}
 
 /*shopClass_show*/
-.shopClass_show{background-color: #4593fd; position: absolute; left: 0px; top: 35px; width: 100%;}
+.shopClass_show{background-color: #4593fd; position: absolute; left: 0px; top: 35px; width: 100%; !important;}
 .shopClass_show_item{padding: 15px 10px; border-bottom: #3487f2 solid 1px; border-top: #5aa1fe solid 1px;}
 .shopClass_show_item .b{font-size: 14px; }
 .shopClass_show_item a{color: #FFFFFF;}
@@ -70,6 +70,8 @@
 .imgNum .imgNum_active{background-color: #ff7700;}
 
 /*shopTit*/
-.shopTit{height: 45px;font-size: 24px;}
+.shopTit{height: 45px;font-size: 24px; margin-bottom: 15px;}
 .shopTit .icon{width:44px; height: 45px;  background: url("../images/icon.png") left top no-repeat; display: inline-block;float: left;}
 .shopTit h3{float: left; height: 45px; line-height: 45px; margin-left: 14px; font-weight: normal;}
+.more{float: right; font-size: 12px;font-family: "宋体";color: black;}
+.more:hover{text-decoration: underline;}
