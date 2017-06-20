@@ -9,7 +9,8 @@
         this.posterItemMain = poster.find("ul.poster-list");
         this.nextBtn = poster.find("div.poster-next-btn");
         this.prevBtn = poster.find("div.poster-prev-btn");
-        this.posterItems  =poster.find("li.poster-item");
+        this.posterItems = poster.find("li.poster-item");
+        this.posterFirstItem = this.posterItems.first();
         // if(this.posterItems.size()%2==0){
         //     this.posterItemMain.append(this.posterItems.eq(0).clone());
         //     this.posterItems = this.posterItemMain.children();
@@ -54,12 +55,12 @@
             this.nextBtn.css({
                 width:w,
                 height:this.setting.height,
-                // zIndex:Math.ceil(this.posterItems.size()/2)
+                zIndex:Math.ceil(this.posterItems.size()/2)
             });
             this.prevBtn.css({
                 width:w,
                 height:this.setting.height,
-                // zIndex:Math.ceil(this.posterItems.size()/2)
+                zIndex:Math.ceil(this.posterItems.size()/2)
             });
 
             this.posterItems.css({
@@ -67,7 +68,11 @@
                 height:this.setting.posterHeight,
                 left:w,
                 top:0,
-                // zIndex:Math.floor(this.posterItems.size()/2)
+                zIndex:Math.floor(this.posterItems.size()/2)
+            });
+
+            this.posterFirstItem.css({
+                zIndex:Math.floor(this.posterItems.size()/2)
             });
         },
 
