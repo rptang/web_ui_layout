@@ -17,5 +17,5 @@ body{color:#666; background-color:#fff;font: 12px/1.5 '微软雅黑',tahoma,aria
 .poster-main a,.poster-main img{display:block;}
 .poster-main .poster-list .poster-item{position: absolute; top:0; left:0;}
 .poster-main .poster-btn{width: 100px; height:270px; position: absolute; top: 0; opacity: 0.8; z-index: 10;}
-.poster-main .poster-prev-btn{left: 0;background: url("../images/btn_l.png") no-repeat center;background-color: red}
-.poster-main .poster-next-btn{right: 0;background: url("../images/btn_r.png") no-repeat center;background-color: red}
+.poster-main .poster-prev-btn{left: 0;background: url("../images/btn_l.png") no-repeat center;}
+.poster-main .poster-next-btn{right: 0;background: url("../images/btn_r.png") no-repeat center;}
