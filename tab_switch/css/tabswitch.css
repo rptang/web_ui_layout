@@ -1,0 +1,28 @@
+/*重置*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content: "";}
+abbr,acronym{border:0;}
+body{font-size: 12px;}
+
+.tab{margin: 100px auto;width: 398px;height: 200px;border: #8E8E8E solid 1px; overflow: hidden;}
+
+/*标题区*/
+.tab .tab_title{background-color: #eeeeee; position: relative; height: 30px;}
+.tab .tab_title ul{position: absolute; width: 401px;left: -1px;}
+.tab .tab_title ul li{width: 78px;height: 29px; float: left; text-align: center; border-bottom: #8E8E8E solid 1px; line-height: 29px; padding: 0 1px; overflow: hidden;}
+/*.tab .tab_list ul li a:link, .tab .tab_list ul li a:visited{text-decoration: none; color: black;}*/
+.tab .tab_list li a:hover{color: #E63003;}
+.tab .tab_list li.select{background-color: #FFFFFF;border-bottom-color: #FFFFFF;border-left: #8E8E8E solid 1px; border-right: #8E8E8E solid 1px; padding: 0; font-weight: bold;}
+.tab .tab_title .tab_list a{text-decoration: none; color: black;}
+/*.tab .tab_title .tab_list .tab_item:hover{background-color: #FFFFFF; border-right: #8E8E8E solid 1px; border-left: #8E8E8E solid 1px; width: 78px; color: #E63003;}*/
+
+/*内容区*/
+.tab_context .mod{margin: 10px 10px 10px 19px;}
+.tab_context .mod ul li{float: left; width: 150px; height: 50px; line-height: 50px; overflow: hidden;}
+.tab_context .mod{display: none;}
