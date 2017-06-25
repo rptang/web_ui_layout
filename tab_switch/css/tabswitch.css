@@ -13,14 +13,12 @@ body{font-size: 12px;}
 .tab{margin: 100px auto;width: 398px;height: 200px;border: #8E8E8E solid 1px; overflow: hidden;}
 
 /*标题区*/
-.tab .tab_title{background-color: #eeeeee; position: relative; height: 30px;}
-.tab .tab_title ul{position: absolute; width: 401px;left: -1px;}
-.tab .tab_title ul li{width: 78px;height: 29px; float: left; text-align: center; border-bottom: #8E8E8E solid 1px; line-height: 29px; padding: 0 1px; overflow: hidden;}
-/*.tab .tab_list ul li a:link, .tab .tab_list ul li a:visited{text-decoration: none; color: black;}*/
+.tab .tab_title{position: relative; height: 30px;}
+.tab .tab_title ul{position: absolute; width: 401px;left: -1px; overflow: hidden;}
+.tab .tab_title ul li{width: 78px;height: 29px; float: left; text-align: center; border-bottom: #8E8E8E solid 1px; line-height: 29px; padding: 0 1px; overflow: hidden; background-color: #eeeeee;}
 .tab .tab_list li a:hover{color: #E63003;}
 .tab .tab_list li.select{background-color: #FFFFFF;border-bottom-color: #FFFFFF;border-left: #8E8E8E solid 1px; border-right: #8E8E8E solid 1px; padding: 0; font-weight: bold;}
 .tab .tab_title .tab_list a{text-decoration: none; color: black;}
-/*.tab .tab_title .tab_list .tab_item:hover{background-color: #FFFFFF; border-right: #8E8E8E solid 1px; border-left: #8E8E8E solid 1px; width: 78px; color: #E63003;}*/
 
 /*内容区*/
 .tab_context .mod{margin: 10px 10px 10px 19px;}
