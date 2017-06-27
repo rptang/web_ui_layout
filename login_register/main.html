@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>登录注册</title>
+    <link type="text/css" rel="stylesheet" href="css/register.css">
 </head>
 <body>
     <div class="register">
         <!-- 会员名-->
-        <div>
+        <div class="username">
             <label>
-                <span>  会员名：</span><input type="text">
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;会员名：</span><input type="text">
                 <p><i></i>5-25个字符，一个汉字为两个字符，推荐使用中文会员名</p>
             </label>
         </div>
@@ -20,20 +21,20 @@
         </div>
 
         <!-- 登录密码-->
-        <div>
+        <div class="password">
             <label>
                 <span>登录密码：</span><input type="password">
                 <p><i></i>5-25个字符，一个汉字为两个字符，推荐使用中文会员名</p>
             </label>
         </div>
-        <div>
+        <div class="password-safe">
             <label>
-                <span></span><em>弱</em><em>中</em><em>强</em>
+                <span></span><em class="select">弱</em><em>中</em><em>强</em>
             </label>
         </div>
 
         <!-- 确认密码-->
-        <div>
+        <div class="confirmPwd">
             <label>
                 <span>确认密码：</span><input type="password">
                 <p><i></i>请再输入一次</p>
@@ -41,11 +42,15 @@
         </div>
 
         <!-- 验证码-->
-        <div>
+        <div class="code">
             <label>
-                <span>确认密码：</span><input type="password">
-                <p><i></i>请再输入一次</p>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;验证码：</span><input type="text">
+                <img src="images/ok.png"><a title="重新获取验证码"></a>
             </label>
+        </div>
+
+        <div class="agree-protical">
+            <input type="button" value="同意协议并注册">
         </div>
 
     </div>

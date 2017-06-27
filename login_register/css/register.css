@@ -1,0 +1,40 @@
+/*重置*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content: "";}
+abbr,acronym{border:0;}
+body{font-size: 14px;}
+/*整个内容水平居中*/
+.register{margin: 100px auto;width: 50%;}
+
+.register .username p, .register .password p,.register .confirmPwd p{display: inline;}
+
+/*会员名模块*/
+.register #count{display: none;}
+.register .username input{height: 30px; width: 200px;}
+
+/*登录密码模块*/
+.register .password{margin-top: 30px;}
+.register .password input{height: 30px; width: 200px;}
+.register .password-safe{margin-left: 71px;width: 200px;margin-top: 3px;}
+/*有些元素无法设置宽高，是因为它们不是块级元素，所以要先给其设置成块级元素*/
+.register .password-safe em{display: inline-block ;width: 33%; text-align: center; color: #ffffff;background-color: #ee8a27;}
+.register .password-safe .select{background-color: #FF0000;}
+
+/*确认密码模块*/
+.register .confirmPwd{margin-top: 30px;}
+.register .confirmPwd input{height: 30px; width: 200px;}
+
+/*验证码模块*/
+.register .code {margin-top: 30px; height: 30px; margin-left: -2px;}
+.register .code input{width: 100px; height: 100%;}
+.register .code img{height: 20px; vertical-align: middle;margin-top: -3px;}
+
+/*同意协议并注册模块*/
+.register .agree-protical{margin-top: 30px; margin-left: 68px;}
+.register .agree-protical input{width: 200px; height: 30px; background-color: #ee5555; color: #ffffff; border: none;}
