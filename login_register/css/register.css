@@ -10,13 +10,17 @@ q:before,q:after{content: "";}
 abbr,acronym{border:0;}
 body{font-size: 14px;}
 /*整个内容水平居中*/
-.register{margin: 100px auto;width: 50%;}
+.register{margin: 100px auto;width: 60%;}
 
 .register .username p, .register .password p,.register .confirmPwd p{display: inline;}
 
 /*会员名模块*/
-.register #count{display: none;}
-.register .username input{height: 30px; width: 200px;}
+.register #count{font-weight: normal; color: #b1c2cd;visibility: hidden;}
+.register .username p{display: inline-block;}
+.register .username .ok{display: inline-block;background: url("../images/ok.png") no-repeat center; width: 30px; height: 30px; vertical-align: middle; margin-top: -3px;}
+.register .username .tip{display: inline-block;background: url("../images/tip.png") no-repeat center; width: 30px; height: 30px; vertical-align: middle; margin-top: -3px;}
+.register .username .err{display: inline-block;background: url("../images/error.png") no-repeat center; width: 30px; height: 30px; vertical-align: middle; margin-top: -3px;}
+.register .username input{height: 30px; width: 200px; padding-left: 5px;}
 
 /*登录密码模块*/
 .register .password{margin-top: 30px;}
