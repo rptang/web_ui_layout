@@ -10,33 +10,34 @@ q:before,q:after{content: "";}
 abbr,acronym{border:0;}
 body{font-size: 14px;}
 /*整个内容水平居中*/
-.register{margin: 100px auto;width: 60%;}
+.register{margin: 100px auto;width: 70%;}
 
 .register .username p, .register .password p,.register .confirmPwd p{display: inline;}
 
 /*会员名模块*/
 .register #count{font-weight: normal; color: #b1c2cd;visibility: hidden;}
 .register .username p{display: inline-block;}
-.register .username .ok{display: inline-block;background: url("../images/ok.png") no-repeat center; width: 30px; height: 30px; vertical-align: middle; margin-top: -3px;}
-.register .username .tip{display: inline-block;background: url("../images/tip.png") no-repeat center; width: 30px; height: 30px; vertical-align: middle; margin-top: -3px;}
-.register .username .err{display: inline-block;background: url("../images/error.png") no-repeat center; width: 30px; height: 30px; vertical-align: middle; margin-top: -3px;}
+.register .ok{display: inline-block;background: url("../images/ok.png") no-repeat center; width: 30px; height: 30px; vertical-align: middle; margin-top: -3px;}
+.register .tip{display: inline-block;background: url("../images/tip.png") no-repeat center; width: 30px; height: 30px; vertical-align: middle; margin-top: -3px;}
+.register .err{display: inline-block;background: url("../images/error.png") no-repeat center; width: 30px; height: 30px; vertical-align: middle; margin-top: -3px;}
 .register .username input{height: 30px; width: 200px; padding-left: 5px;}
 
 /*登录密码模块*/
 .register .password{margin-top: 30px;}
-.register .password input{height: 30px; width: 200px;}
-.register .password-safe{margin-left: 71px;width: 200px;margin-top: 3px;}
+.register .password input{height: 30px; width: 200px; padding-left: 5px;}
+.register .password-safe{margin-left: 72px;width: 200px;margin-top: 3px;}
 /*有些元素无法设置宽高，是因为它们不是块级元素，所以要先给其设置成块级元素*/
-.register .password-safe em{display: inline-block ;width: 33%; text-align: center; color: #ffffff;background-color: #ee8a27;}
+.register .password-safe em{display: inline-block ;width: 64px; text-align: center; color: #ffffff; margin-left: 2px;}
 .register .password-safe .select{background-color: #FF0000;}
+.register .password-safe .unsel{background-color: #ee8a27;}
 
 /*确认密码模块*/
 .register .confirmPwd{margin-top: 30px;}
-.register .confirmPwd input{height: 30px; width: 200px;}
+.register .confirmPwd input{height: 30px; width: 200px; padding-left: 5px;}
 
 /*验证码模块*/
 .register .code {margin-top: 30px; height: 30px; margin-left: -2px;}
-.register .code input{width: 100px; height: 100%;}
+.register .code input{width: 100px; height: 100%;padding-left: 5px;}
 .register .code img{height: 20px; vertical-align: middle;margin-top: -3px;}
 
 /*同意协议并注册模块*/
